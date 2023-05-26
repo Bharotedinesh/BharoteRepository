@@ -1,23 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" parallel="tests" name="ChromeTest(failed)">
+    <parameter name="Vusernname" value="admin"/>
+    <parameter name="Vpassword" value="manager"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="http://desktop-neii4g1/login.do"/>
     <classes>
-      <class name="testNGpackage2.Test3">
+      <class name="testNGExecution.SelectBrowser2">
         <methods>
-          <include name="test3Method"/>
+          <include name="method1"/>
         </methods>
-      </class> <!-- testNGpackage2.Test3 -->
-      <class name="testNGpackage2.Test2">
-        <methods>
-          <include name="test2Method"/>
-        </methods>
-      </class> <!-- testNGpackage2.Test2 -->
-      <class name="testNGpackage2.Test1">
-        <methods>
-          <include name="test1Method"/>
-        </methods>
-      </class> <!-- testNGpackage2.Test1 -->
+      </class> <!-- testNGExecution.SelectBrowser2 -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="5" parallel="tests" name="FirefoxTest(failed)">
+    <parameter name="Vusernname" value="admin"/>
+    <parameter name="Vpassword" value="manager"/>
+    <parameter name="browser" value="firefox"/>
+    <parameter name="url" value="http://desktop-neii4g1/login.do"/>
+    <classes>
+      <class name="testNGExecution.SelectBrowser2">
+        <methods>
+          <include name="method1"/>
+        </methods>
+      </class> <!-- testNGExecution.SelectBrowser2 -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
