@@ -1,7 +1,7 @@
 package genericPackage;
 
-public class IAutoConstant {
-	 String CHROME_KAY="webdrver.chrome.diver";
+public interface IAutoConstant {
+	 String CHROME_KEY="webdrver.chrome.diver";
 	 String CHROME_PATH="./drivers/chromedriver.exe";
 	 
 	 String GECKO_KEY="webdrver.chrome.diver";
@@ -12,6 +12,8 @@ public class IAutoConstant {
 	 
      String EXCEL_PATH="./data/ActiTimeTestData.xlsx";
      String PROP_PATH="./data/config.properties";
+     
+     String SCREENSHOT_PATH="./screenShots/";
 
 
 }
