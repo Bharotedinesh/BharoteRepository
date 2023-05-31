@@ -8,7 +8,7 @@ public class Flag5 {
 	@Test(description = "Login testcases")
 	public void loginMethod()
 	{
-		Reporter.log("Login Perform"true);
+	  Reporter.log("Perform Login!!",true);
 	}
 	@Test(description = "CreateUser")
 	public void createuserMethod() {

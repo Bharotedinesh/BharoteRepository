@@ -5,15 +5,15 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class DoubleClickMethod {
-	public static void main(String[] args) {
+public class DoubleClickMethod2 {
+	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 		//Open Browser
 
 		ChromeDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-		driver.get("http://laptop-knl22f4g/login.do");
+		driver.get("http://127.0.0.1/login.do;jsessionid=g3ddjhi20j9df");
 
 		// Handle login page with valid inputs
 
@@ -29,8 +29,12 @@ public class DoubleClickMethod {
 
 		//click on logo & color
 		driver.findElement(By.xpath("//a[contains(.,'Logo &')]")).click();
+		Thread.sleep(2000);
 		
-
+		//click on radio button
+		
+		driver.findElement(By.id("//label[@for='uploadNewLogoOption']")).click();
+		
 
 	}
 

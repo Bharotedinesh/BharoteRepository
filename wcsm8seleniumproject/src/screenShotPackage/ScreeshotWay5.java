@@ -22,7 +22,7 @@ public class ScreeshotWay5 {
 		
 		// Implementation of method
 		File src = ts.getScreenshotAs(OutputType.FILE);
-		File dest = new File("./scennShot/ss1.png");
+		File dest = new File("./screenShots/ss1.png");
 		Files.copy(src, dest);
 	}
 

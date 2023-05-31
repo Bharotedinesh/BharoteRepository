@@ -23,7 +23,7 @@ public class ScreenShotWebElement {
 
 		if(button.isEnabled())
 		{
-			System.out.println("we can not do login!!!");
+			System.out.println("we can  do login!!!");
 		}
 		else 
 		{
@@ -31,7 +31,7 @@ public class ScreenShotWebElement {
 		}
 
 		File src = button.getScreenshotAs(OutputType.FILE);
-		File dest = new File("./scennShot/webelemntss.jpg");
+		File dest = new File("./screenShots/webelemntss.jpg");
 		Files.copy(src, dest);
 	}
 
